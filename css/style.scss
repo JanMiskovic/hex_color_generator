@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    transition: background-color 1s ease;
+}
+
+main {
+    transition: opacity 0.5s ease;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.95em;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 9px;
+    border: 0px;
+    background-color: #e2e2e2;
+    font-weight: 500;
+    
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        background-color: darkgray;
+    }
+
+    &#autoBtn {
+        transition: opacity 0.5s ease;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
